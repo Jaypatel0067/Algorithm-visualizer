@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Array Shorting visualizer</title>
+  </head>
+  <body>
+   <div class="title"><p>Array shorting visualizer.</p> <h2 class="text-center" id="title_srt">Press button to Generate Array</h2>
+    <div class="adujustment">
+    <div class="range">Array Size: <input type="range"  class="rang_inpuut"  id="range"  min="0" max="150" value="100" step="1"></div>
+    <div class="range">Speed : <input type="range" id="speed"  class="rang_inpuut"  min="0" max="100" value="90" step="1"></div>
+  </div>
+  </div>
+      <div class="container">
+        <div class="row" id="row1"></div>
+       
+        <!-- <div class="row" id="row2"><p class="text-center">selection sort</p></div>
+      <div class="row" id="row3"><p class="text-center">Bubble sort</p></div>
+        <div class="row" id="row4"><p class="text-center">Merge sort</p></div> -->
+      </div>
+      <div class="btn-grp">
+     
+      <input type="button" class="btn active" value="Generate array" onclick="arraygenrater()" />
+      <input
+        type="button"
+         class="btn"
+        value="Selection Short"
+        onclick="Insertion(arr)"
+      />
+      <input
+        type="button"
+         class="btn"
+        value="Selectionn Short"
+        onclick="Selectionn(arr)"
+      /> <input
+      type="button"
+       class="btn"
+      value="Bubble short"
+      onclick="Bubble(arr)"
+    /><input
+    type="button"
+     class="btn"
+    value="Merge Sort short"
+    onclick="merge(arr)"
+  /><input
+  type="button"
+   class="btn"
+  value="insertionSort"
+  onclick="insertionSort(arr)"
+/>
+      <input
+      type="button"
+      id="button" class="btn active"
+      value="Reset"
+      onclick="clear()"
+    />
+    </div>
+  </body>
+  <script type="text/javascript" async="" src="script.js"></script>
+</html>

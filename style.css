@@ -1,0 +1,115 @@
+ body{margin: 0px;padding: 0px;background-color: black;}
+ .title{background-color: #171717;padding: 0.5rem;margin: auto; display: flex;flex-direction: row;justify-content: space-between;}
+ p{font-size: 14pt;font-weight:600;color: #ffae00;text-shadow: 2px 2px 12px black;margin: 19px 20px;}
+ .container{
+    margin: 4rem auto;
+    background-color: #212121;
+    height: 57vh;width: 90%; 
+    display: flex;border-radius: 10px;
+    flex-direction: column;
+ }
+ .adujustment{
+  display: flex;flex-direction: row; gap:1%;font-size: 14pt; color: white; 
+ }
+ input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+   
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#ffae00, #ff4500);
+   
+  background-repeat: no-repeat;
+}
+ 
+ input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ff4500;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+ #speed {
+  direction: rtl
+}
+#title_srt{ 
+  color:   #ffae00;
+  
+  transition: color 250ms ease-in-out;
+   
+
+}
+ .text-center{text-align: center;}
+ .row{
+    margin: auto;
+ padding: 2rem;
+    transition: all 1s ease-in-out;
+    background-color:#212121;
+ }
+.divbar,.secdivbar,.third,.forth {
+  display: inline-flex;box-shadow: 2px 2px 12px black;
+  
+  width: 6px;
+
+  background-color: #ffae00;
+  
+  border: 1px solid black;
+}
+
+.btn-grp{
+ 
+    margin: auto;
+    background-color: #171717;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+   
+}
+.btn{
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color:  hsl(0deg 0% 25%);
+ 
+  background-color: var(--border--color);
+  color:   #ffae00;
+  border: 1px solid;
+ 
+    /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: .5em 1.5em;
+  font-size: 17px;margin:auto;
+  
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  transition: color 250ms;
+   
+
+}
+
+.btn:hover,.active{
+    background-color: hsl(0deg 0% 25%);color:   #ffae00;
+}
